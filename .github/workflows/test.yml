@@ -1,0 +1,16 @@
+name: Test Self-Hosted Runner
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: Print hostname
+        run: hostname
+
+      - name: Print OS info
+        run: uname -a
+
+      - name: Hello from self-hosted runner
+        run: echo "This job ran on my own VM!"
