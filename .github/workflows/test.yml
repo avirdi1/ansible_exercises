@@ -1,3 +1,4 @@
+# Trigger test run on self-hosted runner
 name: Test Self-Hosted Runner
 
 on: [push]
